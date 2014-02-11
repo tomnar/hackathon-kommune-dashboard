@@ -13,12 +13,12 @@ $(document).ready(function(){
 	$('.item').click(function(){
 		var oldBig = $('.is-expanded');
 		oldBig.removeClass('is-expanded');
-		$(oldBig.find('img').get(0)).show();
-		$(oldBig.find('img').get(1)).hide();
+		$(oldBig.find('.small')).show();
+		$(oldBig.find('.big')).hide();
 		
 		$(this).addClass('is-expanded');
-		$($(this).find('img').get(0)).hide();
-		$($(this).find('img').get(1)).show();
+		$($(this).find('.small')).hide();
+		$($(this).find('.big')).show();
 		$container.isotope('layout');
 	});
 	

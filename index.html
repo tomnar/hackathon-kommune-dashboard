@@ -5,8 +5,12 @@
 	<title>Kommune hack</title>
 	<script type="text/javascript" src="js/jquery.2.min.js"></script>
 	<script type="text/javascript" src="js/isotope.pkgd.js"></script>
+	<script type="text/javascript" src="js/d3.min.js"></script>
+	<script type="text/javascript" src="js/my.d3.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/d3.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <header>
@@ -21,16 +25,34 @@
 		<div class="item-content">1</div>
 	</div>
 	<div class="item A B C is-expanded">
-		<div class="item-content">2</div>
+		<div class="item-content">
+			<div class="big">
+				<svg id="visualization" xmlns="http://www.w3.org/2000/svg" version="1.1">
+				</svg>
+				<div class="info"></div>
+			</div>
+			<div class="small">
+			</div>
+			<h2>Blodtryk</h2>
+		</div>
 	</div>
 	<div class="item A B">
 		<div class="item-content">
-			<img src="img/lillebillede.png"/>
-			<img src="img/Storbillede.png"/>
+			<div class="small">
+				<img src="img/lillebillede.png"/>
+			</div>
+			<div class="big">
+				<img src="img/Storbillede.png"/>
+			</div>
 		</div>
 	</div>
 	<div class="item A B C">
-		<div class="item-content">4</div>
+		<div class="item-content">
+			<div class="small"></div><div class="big"></div>
+			<div class="preview">
+				<img />
+			</div>
+		</div>
 	</div>
 	<div class="item B C">
 		<div class="item-content"></div>
