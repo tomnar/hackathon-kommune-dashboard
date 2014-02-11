@@ -11,6 +11,7 @@ $(document).ready(function(){
 	});
 	
 	$('.item').click(function(){
+		if($(this).hasClass('is-expanded')){return;};
 		var oldBig = $('.is-expanded');
 		oldBig.removeClass('is-expanded');
 		$(oldBig.find('.small')).show();
@@ -34,7 +35,7 @@ $(document).ready(function(){
 	
 	$('.box5').click(function(){
 		$('.box5 .line').animate({
-			height: 396
+			height: 386
 		},2000);
 		$('.box5 .imageLineup .el').each( function(i){
 			$(this).delay(300*i).fadeIn(200);
