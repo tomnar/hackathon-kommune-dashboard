@@ -6,13 +6,19 @@ $(document).ready(function(){
 	$container.isotope({
 	  itemSelector: '.item',
 	  masonry: {
-		  columnWidth: 400
+		  columnWidth: 300
 	  }
 	});
 	
 	$('.item').click(function(){
-		$('.item').removeClass('is-expanded');
+		var oldBig = $('.is-expanded');
+		oldBig.removeClass('is-expanded');
+		$(oldBig.find('img').get(0)).show();
+		$(oldBig.find('img').get(1)).hide();
+		
 		$(this).addClass('is-expanded');
+		$($(this).find('img').get(0)).hide();
+		$($(this).find('img').get(1)).show();
 		$container.isotope('layout');
 	});
 	
