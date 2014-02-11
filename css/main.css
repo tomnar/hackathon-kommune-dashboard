@@ -9,6 +9,11 @@ body {
 	margin: 0px;
 }
 
+.big{
+	display: none;
+}
+
+
 header li{
 	list-style: none;
 	display: inline-block;
@@ -119,8 +124,81 @@ h2{
 	margin: 0px 0px 3px 0px;
 }
 
+/* box5 */
+.box5 img{
+	width: 60px;
+	margin: 3px;
+}
+.box5 .item-content{
+	padding: 10px;
+}
+.box5 .line{
+	position: absolute;
+	background-color: black;
+	width: 3px;
+	height: 0px;
+	top: 2px;
+	left: 110px;
+}
+.box5 .imageLineup{
+	position: absolute;
+	width: 100px;
+}
+.box5 .imageLineup .el{
+	display: none;
+	width: 575px;
+	position: relative;
+}
+.box5 .imageLineup .el img{
+	margin-left: 69px;
+}
+.box5 .imageLineup .el date{
+	position: absolute;
+	left: 10px;
+	top: 26px;
+	font-size: 12px;
+}
 
+.box5 .imageLineup .el div{
+	display: none;
+	position: absolute;
+	height: 50px;
+	padding: 3px;
+	background: #FFFFFF;
+	border: #000000 solid 1px;
+	left: 150px;
+	top: 8px;
+	font-size: 10px;
+	width: 420px;
+}
 
+.box5 .imageLineup .el div:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 12px 16px 12px 0;
+	border-color: transparent #FFFFFF;
+	display: block;
+	width: 0;
+	z-index: 1;
+	margin-top: -12px;
+	left: -16px;
+	top: 50%;
+}
+
+.box5 .imageLineup .el div:before{
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 12px 16px 12px 0;
+	border-color: transparent #000000;
+	display: block;
+	width: 0;
+	z-index: 0;
+	margin-top: -12px;
+	left: -17px;
+	top: 50%;
+}
 
 
 
