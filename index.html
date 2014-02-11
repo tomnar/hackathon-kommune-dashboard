@@ -46,12 +46,68 @@
 			</div>
 		</div>
 	</div>
-	<div class="item A B C">
+	<div class="item A B C box4">
 		<div class="item-content">
 			<div class="small"></div><div class="big"></div>
 			<div class="preview">
-				<img />
+				<img src="img/borger.jpg" />
+				<table>
+					<tr>
+						<td>Navn</td>
+						<td>Julia Mustermann</td>
+					</tr>
+					<tr>
+						<td>CPR</td>
+						<td>13371337</td>
+					</tr>
+					<tr>
+						<td>Telefon</td>
+						<td>5971439878</td>
+					</tr>
+				</table>
 			</div>
+			<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+			<div class="map">
+				<div id="gmap_canvas" style="height:360px;width:290px;"></div>
+			</div>
+			<script type="text/javascript"> function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(56.155487,10.18967900000007),mapTypeId: google.maps.MapTypeId.TERRAIN, disableDefaultUI:true};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(56.155487, 10.18967900000007)});infowindow = new google.maps.InfoWindow({content:"<div style='position:relative;line-height:1.34;overflow:hidden;white-space:nowrap;display:block;'><div style='margin-bottom:2px;font-weight:500;'></div><span>Ceres All&eacute; 1 <br> 8000  Aarhus</span></div>" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+			<div class="content">
+				<img class="thumb" src="img/mand.jpg" />
+				<table>
+					<tr>
+						<td colspan="2"><h3>Mand</h3></td>
+					</tr>
+					<tr>
+						<td>Navn</td>
+						<td>Rolf Mustermann</td>
+					</tr>
+					<tr>
+						<td>CPR</td>
+						<td>13381338</td>
+					</tr>
+					<tr>
+						<td>Telefon</td>
+						<td>5971439878</td>
+					</tr>
+				</table>
+			</div>
+			<div class="content doc">
+				<img class="thumb" src="img/doctor.jpg" />
+				<table>
+					<tr>
+						<td colspan="2"><h3>Læge</h3></td>
+					</tr>
+					<tr>
+						<td>Navn</td>
+						<td>Casse Lor</td>
+					</tr>
+					<tr>
+						<td>Telefon</td>
+						<td>58466514</td>
+					</tr>
+				</table>
+			</div>
+			<h2>Info</h2>
 		</div>
 	</div>
 	<div class="item B C">

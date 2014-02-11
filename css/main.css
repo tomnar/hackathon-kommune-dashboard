@@ -58,4 +58,76 @@ h2{
 	right: 10px;
 	bottom: 0px;
 	font-weight: 300;
+	margin: 0px;
 }
+
+/* box 4 */
+.box4 img{
+	width: 70px;
+	border: 3px solid white;
+	border-radius: 50px;
+	margin: 50px 0px 0px 35px;
+}
+.box4 .content img.thumb{
+	width: 55px;
+	margin: 79px 0px 0px 43px;
+}
+.box4 table{
+	font-size: 10px;
+	width: 150px;
+	display: block;
+	position: absolute;
+	top: 60px;
+	left: 120px;
+}
+.box4 td{
+	padding: 0px 5px
+}
+.box4 .preview{
+	float: left;
+	height: 200px;
+	width: 300px;
+}
+.box4 .map{
+	overflow: hidden;
+	height: 360px;
+	width: 290px;
+	border: 1px solid white;
+	margin-top: 5px;
+}
+.box4 .content{
+	position: absolute;
+	top: 135px;
+}
+.box4 .content table{
+	font-size: 9px;
+	margin-top: 10px;
+}
+.box4 .content.doc table{
+	margin-top: 18px;
+}
+.box4 .content.doc{
+	position: absolute;
+	top: 220px;
+}
+.box4 .content img{
+	margin: 70px 0px 0px 35px;
+}
+.box4 table h3{
+	font-weight: 300;
+	font-size: 16px;
+	margin: 0px 0px 3px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
