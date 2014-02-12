@@ -18,14 +18,17 @@ body {
 header li{
 	list-style: none;
 	display: inline-block;
-	width: 100px;
+	width: 140px;
 	cursor: pointer;
+	text-align: center;
+	font-size: 12px;
 }
 header ul{
 	margin: 0px;
 }
 header{
 	text-align: right;
+	margin-right: 227px;
 }
 #main{
 	width: 900px;
@@ -464,6 +467,11 @@ a{
 	font-size: 30px;
 	top: 65px;
 	left: 330px;
+}
+
+/* bo10 */
+.box10 .item-content{
+	padding: 20px;
 }
 
 
