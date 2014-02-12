@@ -68,6 +68,9 @@ $(document).ready(function(){
 		$('.box5 .imageLineup .el div').hide();
 		$(this).find('div').fadeIn(300);
 	});
+	$('.box5 .imageLineup .el div').each( function(i){
+		$(this).lorem({ type: 'paragraphs',amount:'1',ptags:true});
+	});
 	
 	function clearTexts(){
 		$('.box2 .big .text.a').hide();
