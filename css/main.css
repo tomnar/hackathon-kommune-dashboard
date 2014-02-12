@@ -223,8 +223,8 @@ h2{
 	position: absolute;
 	height: 250px;
 	padding: 3px;
-	background: #FFFFFF;
-	border: #000000 solid 1px;
+	background: #1987c3;
+	border: #ffffff solid 1px;
 	left: 150px;
 	top: -85px;
 	font-size: 10px;
@@ -259,7 +259,7 @@ h2{
 	position: absolute;
 	border-style: solid;
 	border-width: 5px 5px 5px 0;
-	border-color: transparent #FFFFFF;
+	border-color: transparent #1987c3;
 	display: block;
 	width: 0;
 	z-index: 1;
@@ -272,7 +272,7 @@ h2{
 	position: absolute;
 	border-style: solid;
 	border-width: 5px 5px 5px 0;
-	border-color: transparent #000000;
+	border-color: transparent #FFFFFF;
 	display: block;
 	width: 0;
 	z-index: 0;
@@ -285,7 +285,7 @@ h2{
 	width: 570px;
 	position: absolute;
 	height: 6px;
-	background-color: lightgray;
+	background-color: #b6ced6;
 	bottom: 0px;
 	z-index: 2;
 }
