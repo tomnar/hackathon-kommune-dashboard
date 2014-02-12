@@ -38,6 +38,13 @@ $(document).ready(function(){
 		$container.isotope({ filter: '.' + filter });
 	});
 	
+	$('.box1').click(function(){
+		if($(this).hasClass('.is-expanded')){return;}
+		$('.box1 .big iframe').each(function(){
+			$(this).attr('src', $(this).attr('src'));
+		});
+	});
+	
 	$('.box2 .c1').click(function(){
 		$('.box2 .big img').attr('src', 'img/Person1.png');
 		clearTexts();

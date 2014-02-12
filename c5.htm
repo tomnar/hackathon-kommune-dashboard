@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://fiddle.jshell.net/Nw62g/22/show/light/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title> - jsFiddle demo</title>
+  
+  <script type="text/javascript" src="js/d3.min.js"></script>
+  
+  <style type="text/css">
+    body{
+    background-color: #51aed7;
+}
+.background{
+    position: absolute;
+width: 136px;
+height: 136px;
+background-color: white;
+border-radius: 100px;
+top: 8px;
+z-index: -1;
+left: 10px;
+}
+.background:after{
+    content: "";
+display: block;
+position: absolute;
+width: 108px;
+height: 108px;
+background-color: #51aed7;
+border-radius: 76px;
+top: 14px;
+left: 14px;
+}
+svg:first-of-type{
+	display: none;
+}
+  </style>
+  
+
+
+<script type="text/javascript">//<![CDATA[ 
+window.onload=function(){
+var data = [ {name: "one", value: 12},
+			{name: "two", value:  24} ];
+
+var margin = {top: 2, right: 2, bottom: 2, left: 2};
+	width = 140 - margin.left - margin.right;
+	height = width - margin.top - margin.bottom;
+
+var chart = d3.select("body")
+				.append('svg')
+			    .attr("width", width + margin.left + margin.right)
+			    .attr("height", height + margin.top + margin.bottom)
+			   .append("g")
+    			.attr("transform", "translate(" + ((width/2)+margin.left) + "," + ((height/2)+margin.top) + ")");
+
+
+var radius = Math.min(width, height)/2;
+
+var color = d3.scale.ordinal()
+	.range(["#1987c3", "white"]);
+
+var arc = d3.svg.arc()
+    .outerRadius(radius)
+    .innerRadius(radius - 10);
+
+var pie = d3.layout.pie()
+    .sort(null)
+    .startAngle(1.1*Math.PI)
+    .endAngle(3.1*Math.PI)
+    .value(function(d) { return d.value; });
+
+
+var g = chart.selectAll(".arc")
+  .data(pie(data))
+.enter().append("g")
+  .attr("class", "arc");
+
+g.append("path")
+  .style("fill", function(d) { return color(d.data.name); })
+  .transition().delay(function(d, i) { return i * 500; }).duration(1500)
+  .attrTween('d', function(d) {
+       var i = d3.interpolate(d.startAngle+0.1, d.endAngle);
+       return function(t) {
+           d.endAngle = i(t);
+         return arc(d);
+       }
+  });
+}//]]>  
+
+</script>
+
+
+</head>
+<body>
+  <div class="background"></div>
+  
+
+
+
+
+
+<svg width="140" height="136"><g transform="translate(70,68)"><g class="arc"><path d="M-20.395121628746555,62.769730075480126A66,66 0 1,1 53.39512162874652,-38.79382665130324L45.30495168499705,-32.91597412837851A56,56 0 1,0 -17.304951684997075,53.25916491252859Z" style="fill: #1987c3;"></path></g><g class="arc"><path d="M53.39512162874652,-38.79382665130324A66,66 0 0,1 -20.39512162874651,62.76973007548014L-17.30495168499704,53.259164912528604A56,56 0 0,0 45.30495168499705,-32.91597412837851Z" style="fill: #ffffff;"></path></g></g></svg></body></html>
