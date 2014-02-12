@@ -3,6 +3,8 @@ $(document).ready(function(){
 	var $container = $('#main');
 	$container.isotope({ filter: '.A'});
 	
+	FastClick.attach(document.body);
+	
 	$container.isotope({
 	  itemSelector: '.item',
 	  masonry: {
