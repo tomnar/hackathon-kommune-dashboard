@@ -418,7 +418,14 @@ h2{
 	left: 70px;
 }
 
-
+/* other */
+#crowd-shortcut{
+	display: none !important;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
 
 
 
