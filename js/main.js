@@ -21,7 +21,10 @@ $(document).ready(function(){
 		$('.box5 .imageLineup .el').hide();
 		$('.box5 .imageLineup .el div').hide();
 		$('.box2 .big img').attr('src', 'img/Personclean.png');
+		$('.box2 .big img').attr('src', 'img/Person1.png');
 		clearTexts();
+		$('.box2 .big .text.a').show();
+		$($('.box5 .imageLineup .el').get(0)).find('div').fadeIn(1000);
 		
 		$(this).addClass('is-expanded');
 		$($(this).find('.small')).hide();
