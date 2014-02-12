@@ -1,11 +1,11 @@
 /* my styles */
 .axis path {
 	fill:none; 
-	stroke:#aaa; 
+	stroke:#fff; 
 	stroke-width:1px;
 }
 .tick text {
-	fill:#aaa; 
+	fill:#fff; 
 	font-size:.75em; 
 	font-weight:normal;
 }
@@ -18,12 +18,13 @@
 	font-weight: bold; 
 	font-family: monospace; 
 	border: 1px solid white;
+	top: 130px;
 }
 main {
 	margin-top: 20px; 
 	border-radius: 10px; 
 	padding-top: 10px; 
-	border: 6px double #eee;
+	border: 6px double #fff;
 }
 section {
 	position: relative
@@ -69,5 +70,5 @@ h1 span {
 	border-radius: 10px;
 }
 #visualization{
-	margin-top: 150px;
+	margin-top: 205px;
 }

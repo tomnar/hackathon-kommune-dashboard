@@ -48,7 +48,7 @@ $(document).ready(function() {
 	var yAxis = d3.svg.axis()
         .scale(yAxisScale)
         .orient("left")
-		.ticks(10);
+		.ticks(5);
 	svg.append("g")
 		.attr("class", "axis")
 		.attr("transform", "translate(40," + 10 + ")")
@@ -97,7 +97,7 @@ $(document).ready(function() {
 	svg.append("svg:path").attr("d", line(datasetByAnnoMedian))
 		.attr({
 			"fill": "none",
-			"stroke": "red",
+			"stroke": "white",
 			"stroke-width": 2
 		});
 		
@@ -173,7 +173,7 @@ $(document).ready(function() {
     //Create the circles for the graph
     elemEnter.append("circle")
         .attr("r", function(d){return CR;} )
-        .attr("fill", "red");
+        .attr("fill", "white");
 
     //Create the text for each circle
     elemEnter.append("text")
@@ -186,7 +186,7 @@ $(document).ready(function() {
 			},
 			"font-family" : "monospace",
 			"opacity" : "0",
-			"fill" : "white",
+			"fill" : "#1987c3",
 			"font-size" : "14px",
 			"font-weight" : "bold"
 		})
@@ -205,7 +205,7 @@ $(document).ready(function() {
 			//Setting the info-text
 			var txt = $(this).attr("desc");
 			var left = $(this).position().left - 25;
-			var top = h - 125;
+			var top = h + 70;
 			$(".info").text(txt).css({"left" : left, "top" : top}).show();
 		}, 
 		function() {
