@@ -20,6 +20,7 @@ $(document).ready(function(){
 		//reset animations in other boxes
 		$('.box5 .imageLineup .el').hide();
 		$('.box5 .imageLineup .el div').hide();
+		$('.box2 .big img').attr('src', 'img/Personclean.png');
 		
 		$(this).addClass('is-expanded');
 		$($(this).find('.small')).hide();
@@ -30,6 +31,19 @@ $(document).ready(function(){
 	$('header li').click(function(){
 		var filter = $(this).attr("class");
 		$container.isotope({ filter: '.' + filter });
+	});
+	
+	$('.box2 .c1').click(function(){
+		$('.box2 .big img').attr('src', 'img/Person1.png');
+	});
+	$('.box2 .c2').click(function(){
+		$('.box2 .big img').attr('src', 'img/Person2.png');
+	});
+	$('.box2 .c3').click(function(){
+		$('.box2 .big img').attr('src', 'img/Person3.png');
+	});
+	$('.box2 .c4').click(function(){
+		$('.box2 .big img').attr('src', 'img/Person4.png');
 	});
 	
 	$('.box5').click(function(){
