@@ -48,6 +48,7 @@ header{
      -moz-transition: width 0.4s, height 0.4s;
        -o-transition: width 0.4s, height 0.4s;
           transition: width 0.4s, height 0.4s;
+  color: white;
 }
 .item-content img{
 	width: 100%;
@@ -134,7 +135,6 @@ h2{
 }
 .box5 .item-content{
 	padding: 10px;
-	background-color: #4392a8;
 }
 .box5 .imageLineup{
 	position: absolute;
@@ -222,7 +222,7 @@ h2{
 	left: -6px;
 	top: 50%;
 }
-<<<<<<< HEAD
+
 .box5 .imageLineup .emptyEl{
 	width: 570px;
 	position: absolute;
@@ -236,9 +236,17 @@ h2{
 	color: white;
 }
 
+.A {
+	color: black;
+}
 
-=======
->>>>>>> d603d9d85c0977dcc179ec8f66777ea6426fdad8
+.B {
+	color: black;
+}
+
+.C {
+	color: black;
+}
 
 
 
