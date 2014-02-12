@@ -12,6 +12,7 @@ $(document).ready(function(){
 	
 	$('.item').click(function(){
 		if($(this).hasClass('is-expanded')){return;};
+		if($(this).hasClass('last')){return;};
 		var oldBig = $('.is-expanded');
 		oldBig.removeClass('is-expanded');
 		$(oldBig.find('.small')).show();
