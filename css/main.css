@@ -132,14 +132,6 @@ h2{
 .box5 .item-content{
 	padding: 10px;
 }
-.box5 .line{
-	position: absolute;
-	background-color: black;
-	width: 3px;
-	height: 0px;
-	top: 2px;
-	left: 110px;
-}
 .box5 .imageLineup{
 	position: absolute;
 	width: 100px;
@@ -167,14 +159,38 @@ h2{
 .box5 .imageLineup .el div{
 	display: none;
 	position: absolute;
-	height: 50px;
+	height: 250px;
 	padding: 3px;
 	background: #FFFFFF;
 	border: #000000 solid 1px;
 	left: 150px;
-	top: 8px;
+	top: -85px;
 	font-size: 10px;
 	width: 300px;
+}
+.box5 .imageLineup .el:nth-child(1) div{
+	top: 8px;
+}
+.box5 .imageLineup .el:nth-child(1) div:after, .box5 .imageLineup .el:nth-child(1) div:before{
+	top: 12%;
+}
+.box5 .imageLineup .el:nth-child(2) div{
+	top:-58px;	
+}
+.box5 .imageLineup .el:nth-child(2) div:after, .box5 .imageLineup .el:nth-child(2) div:before{
+	top:39%;	
+}
+.box5 .imageLineup .el:nth-last-child(2) div{
+	top: -127px;
+}
+.box5 .imageLineup .el:nth-last-child(2) div:after, .box5 .imageLineup .el:nth-last-child(2) div:before{
+	top: 67%;
+}
+.box5 .imageLineup .el:last-child div{
+	top:-193px;	
+}
+.box5 .imageLineup .el:last-child div:after, .box5 .imageLineup .el:last-child div:before{
+	top:94%;	
 }
 .box5 .imageLineup .el div:after {
 	content: '';
@@ -187,7 +203,7 @@ h2{
 	z-index: 1;
 	margin-top: -12px;
 	left: -5px;
-	top: 65%;
+	top: 50%;
 }
 .box5 .imageLineup .el div:before{
 	content: '';
@@ -200,17 +216,8 @@ h2{
 	z-index: 0;
 	margin-top: -12px;
 	left: -6px;
-	top: 65%;
+	top: 50%;
 }
-.box5 .imageLineup .emptyEl{
-	width: 570px;
-	position: absolute;
-	height: 6px;
-	background-color: lightgray;
-	bottom: 0px;
-	z-index: 2;
-}
-
 
 
 

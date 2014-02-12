@@ -19,7 +19,6 @@ $(document).ready(function(){
 		
 		//reset animations in other boxes
 		$('.box5 .imageLineup .el').hide();
-		$('.box5 .line').css('height', 0);
 		$('.box5 .imageLineup .el div').hide();
 		
 		$(this).addClass('is-expanded');
@@ -34,9 +33,6 @@ $(document).ready(function(){
 	});
 	
 	$('.box5').click(function(){
-		$('.box5 .line').animate({
-			height: 386
-		},2000);
 		$('.box5 .imageLineup .el').each( function(i){
 			$(this).delay(300*i).fadeIn(200);
 		});
